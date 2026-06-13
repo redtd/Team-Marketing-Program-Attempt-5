@@ -1,1 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>File Upload Example</title>
+</head>
+<body>
 
+    <!-- 1. Form must use POST and multipart/form-data -->
+    <form action="/your-upload-endpoint" method="POST" enctype="multipart/form-data">
+        
+        <label for="fileChooser">index.html</label>
+        <!-- 2. Input type MUST be "file" and MUST have a "name" attribute -->
+        <input type="file" id="fileChooser" name="uploaded_file">
+        
+        <!-- 3. Submit button triggers the upload -->
+        <button type="submit">Upload File</button>
+    </form>
